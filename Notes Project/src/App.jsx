@@ -37,7 +37,6 @@ const App = () => {
         const res = await fetch(`${API_URL}/api/me`, {
           credentials: 'include',
         });
-
         if (res.ok) {
           const data = await res.json();
           setUser(data.username);
